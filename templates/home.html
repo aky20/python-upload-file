@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/style.css">
+    <title>Profile</title>
+
+</head>
+<body>
+    <div class="image_card_4">
+        <div class="round_image_container">
+            <img id="profile" src="static/img/uploads/profile.png" alt="">
+        </div>
+        <h2>Sara</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    </div>
+
+    <form method=post action="{{ url_for('home') }}" enctype=multipart/form-data>
+        <input type="file" name="image">
+        <button type=submit onclick="myFun()">Upload</button>
+    </form>
+
+ <script src="static/index.js"></script>
+</body>
+</html>
